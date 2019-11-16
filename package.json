@@ -1,0 +1,23 @@
+{
+  "name": "webdriverio-framework",
+  "version": "1.0.0",
+  "description": "test automation framework for web apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marmiou/webdriverio-framework.git"
+  },
+  "author": "Markella Efthymiou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marmiou/webdriverio-framework/issues"
+  },
+  "homepage": "https://github.com/marmiou/webdriverio-framework#readme",
+  "devDependencies": {
+    "selenium-standalone": "^6.15.3",
+    "webdriverio": "^4.13.2"
+  }
+}
