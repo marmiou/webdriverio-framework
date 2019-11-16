@@ -18,6 +18,7 @@
   "homepage": "https://github.com/marmiou/webdriverio-framework#readme",
   "devDependencies": {
     "selenium-standalone": "^6.15.3",
+    "wdio-mocha-framework": "^0.6.4",
     "webdriverio": "^4.13.2"
   }
 }
