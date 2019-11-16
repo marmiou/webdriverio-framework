@@ -4,7 +4,7 @@
   "description": "Test Automation project to run WebdriverIO tests with Mocha against Web Applications",
   "main": "index.js",
   "scripts": {
-    "test": "rm -rf logs/*; ./node_modules/.bin/wdio src/config/wdio.conf.js --caps=chrome"
+    "test": "rm -rf errorShots/*; ./node_modules/.bin/wdio src/config/wdio.conf.js --caps=chrome"
   },
   "repository": {
     "type": "git",
