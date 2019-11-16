@@ -1,10 +1,10 @@
 {
   "name": "webdriverio-framework",
   "version": "1.0.0",
-  "description": "test automation framework for web apps",
+  "description": "Test Automation project to run WebdriverIO tests with Mocha against Web Applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "rm -rf logs/*; ./node_modules/.bin/wdio src/config/wdio.conf.js --caps=chrome"
   },
   "repository": {
     "type": "git",
