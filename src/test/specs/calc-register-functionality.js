@@ -18,7 +18,7 @@ describe('Feature: Verify Register Form Functionality', () => {
         //Register.confirmUnsuccessfulRegistration();
     });
 
-    it('Should verify that user cannot Register when password is less than 8 characters', () => {
+    it('Should verify that user cannot Register when password confirmation fails', () => {
 
         Register.fillRegistrationForm('mickie mouse', 'mickie@mickie.com', 12345678, 1234567);
         //Register.confirmUnsuccessfulRegistration();
