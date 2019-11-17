@@ -38,6 +38,10 @@ module.exports = {
         addBtn: '[data-ui="add-btn"]',
         editBtn: '[data-ui="edit-btn"]',
         deleteBtn: '[data-ui="delete-btn"]',
+        saveBtn: '[data-ui="save-btn"]',
+        addNameInput: '[name="name"]',
+        addCaloriesInput: '[name="calories"]',
+        namesList: '#root > div > div:nth-child(2) > section > div > table > tbody > tr > td:nth-child(1)',
     },
 
 

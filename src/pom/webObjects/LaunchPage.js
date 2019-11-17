@@ -26,22 +26,6 @@ class LaunchPage {
         return this.registerBtn.click();
     }
 
-    selectBtnByTxt(txt){
-        let chosenBtn;
-        let text = txt;
-        let buttonsList = this.buttonsList;
-        let count = browser.elements(buttonsList).value.length;
-
-            for (let i = 0; i < count; i++) {
-                if (browser.elements(buttonsList).value[i].getText() === text.toString()) {
-                    chosenBtn = browser.elements(buttonsList).value[i];
-                    console.log(chosenBtn);
-                    browser.elements(chosenBtn).click();
-                    break;
-                }
-            }
-    }
-
     confirmLaunchTitle() {
         console.log(this.launchTitle);
         var validateTitle = browser.waitUntil( () => {

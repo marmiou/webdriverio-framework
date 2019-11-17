@@ -1,10 +1,11 @@
 var LoginPage = require("../../pom/webObjects/LoginPage");
 var SideMenu = require("../../pom/webObjects/SideMenu");
-var LaunchPage = require("../../pom/webObjects/LaunchPage");
+var EdiblesPage = require("../../pom/webObjects/EdiblesPage");
 
-beforeEach(() => {
 
-    //hook to login and launch Edibles page
+before(() => {
+    // todo:following general browser wdio functions that may be used in all Pages could be moved to a Parent Object and
+    //  all pages could inherit from and extend their functionality
     browser.url('/login');
     browser.pause(3000);
     LoginPage.fillLoginForm('mickey@mickey.com', '12345678');
@@ -14,14 +15,20 @@ beforeEach(() => {
 describe('Feature: Verify Add/Edit/Delete functionality in Edibles Page', () => {
 
     it('Should verify that user can Add a record', () => {
-        
+        EdiblesPage.clickAddBtn();
+        EdiblesPage.verifyAddNameInput();
+        EdiblesPage.verifyAddCaloriesInput();
+        EdiblesPage.addRecord('Almonds', 200);
+        EdiblesPage.verifyAddedRecord('Almonds');
     });
 
-    it('Should verify that user can Edit a record', () => {
+    //wip
+    it.skip('Should verify that user can Edit an existing record', () => {
 
     });
 
-    it('Should verify that user can Delete a record', () => {
+    //wip
+    it.skip('Should verify that user can Delete an existing record', () => {
 
     });
 });
