@@ -1,6 +1,5 @@
 var elements = require('../elements');
 
-
 class LaunchPage {
 
     get registerBtn() {

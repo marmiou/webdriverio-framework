@@ -17,8 +17,8 @@ module.exports = {
     },
 
     login: {
-        emailInput: "[type='email']",
-        passwdInput: '[type="password"]',
+        emailInput: '#email-input',
+        passwdInput: '#password-input',
         joinBtn: '.button',
         flashMsg: '.flash',
     },
@@ -36,6 +36,8 @@ module.exports = {
         caloryBox: '[data-ui="calory-box"]',
         toggleFilterBtn: '[data-ui="toggle-filter-btn"]',
         addBtn: '[data-ui="add-btn"]',
+        editBtn: '[data-ui="edit-btn"]',
+        deleteBtn: '[data-ui="delete-btn"]',
     },
 
 

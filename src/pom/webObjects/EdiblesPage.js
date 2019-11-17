@@ -10,15 +10,21 @@ class EdiblesPage {
         return $(elements.edibles.caloryBox);
     }
 
-    get toggleFilterBtn() {
-       return $(elements.edibles.toggleFilterBtn);
-    }
-
     get addBtn() {
         return $(elements.edibles.addBtn);
     }
 
+    get editBtn() {
+        return $(elements.edibles.editBtn);
+    }
 
+    get deleteBtn() {
+        return $(elements.edibles.deleteBtn);
+    }
+
+    get toggleFilterBtn() {
+        return $(elements.edibles.toggleFilterBtn);
+    }
 
 }
 
