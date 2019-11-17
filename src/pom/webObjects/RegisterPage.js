@@ -1,6 +1,6 @@
 var elements = require('../elements');
 
-class Register {
+class RegisterPage{
 
     get nameInput() {
         return $(elements.register.nameInput);
@@ -44,7 +44,7 @@ class Register {
 
     clickJoinBtn() {
         return this.joinBtn.click();
-    }
+    };
 
     fillRegistrationForm(name, email, passwd, passwdConfirm) {
         if(name) {
@@ -64,14 +64,12 @@ class Register {
 
     confirmUnsuccessfulRegistration() {
         var validateFlash = browser.waitUntil( () => {
-            return this.flashMsg.getText() == 'REGISTRATION FAILED. PLEASE TRY AGAIN'
-        }, 3000);
+            return browser.getText(elements.register.flashMsg)=== 'REGISTRATION FAILED. PLEASE TRY AGAIN'
+        }, 5000);
         expect(validateFlash, 'Unsuccessful Registration Message Does Not Exist!').to.be.true;
     }
-
 }
 
-
-module.exports =  new Register();
+module.exports =  new RegisterPage();
 
 
