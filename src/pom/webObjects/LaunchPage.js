@@ -15,12 +15,16 @@ class LaunchPage {
         return $(elements.launch.buttons);
     }
 
-    get allElements() {
-        return $(elements.launch);
+    get title() {
+        return $(elements.launch.title);
     }
 
-    get launchTitle() {
-        return $(elements.launch.title);
+    clickLoginBtn() {
+        return this.loginBtn.click();
+    }
+
+    clickRegisterBtn() {
+        return this.registerBtn.click();
     }
 
     selectBtnByTxt(txt){

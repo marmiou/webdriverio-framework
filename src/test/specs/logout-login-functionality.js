@@ -3,6 +3,7 @@ var SideMenu = require("../../pom/webObjects/SideMenu");
 var LaunchPage = require("../../pom/webObjects/LaunchPage");
 
 beforeEach(() => {
+
     browser.url('/login');
     browser.pause(3000);
 });
@@ -10,6 +11,8 @@ beforeEach(() => {
 describe('Feature: Verify Logout and Login Functionality', () => {
 
     it('Should verify that user can login and logout', () => {
+        // LaunchPage.confirmLaunchTitle();
+        // LaunchPage.clickLoginBtn();
         LoginPage.fillLoginForm('mickey@mickey.com', '12345678');
         SideMenu.confirmGreetings();
         SideMenu.clickMenuBtn('logout');
