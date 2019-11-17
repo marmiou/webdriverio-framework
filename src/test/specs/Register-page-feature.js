@@ -28,7 +28,7 @@ describe('Feature: Verify Register Form Functionality', () => {
     //each execution. Added here for demonstration purposes
     it('Should verify that user can Register with valid fields', () => {
 
-        RegisterPage.fillRegistrationForm('mary loua', 'mary@loua.com', 12345678, 12345678);
+        RegisterPage.fillRegistrationForm('mary loi', 'mary@loi.com', 12345678, 12345678);
         SideMenu.confirmGreetings();
     });
 });
