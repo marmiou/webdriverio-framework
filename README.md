@@ -30,6 +30,6 @@ Against **Web** Apps
 
 #### Feature
 
-* `--spec`: npm test -- --spec <feature-file-name>
+* `--spec`: npm test -- --spec feature-file-name
 
 
