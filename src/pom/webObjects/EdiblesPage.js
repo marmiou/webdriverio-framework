@@ -8,6 +8,7 @@ class EdiblesPage {
 
     get caloryBox() {
         return $(elements.edibles.caloryBox);
+        
     }
 
     get addBtn() {
