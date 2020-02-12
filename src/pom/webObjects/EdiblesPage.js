@@ -75,8 +75,6 @@ class EdiblesPage {
         var found = false;
 
         for (let i = 0; i < count; i++) {
-            let markella = browser.$$(namesList).getAttribute('innerText');
-            console.log(markella);
             if (browser.element(namesList).getAttribute('innerText') === name.toString()) {
                 found = true;
                 console.log(found);
@@ -100,11 +98,9 @@ class EdiblesPage {
     }
 
     verifyAddedRecord(name) {
-        console.log('1');
         var validateAddedRecord = browser.waitUntil( () => {
             return this.findRecordByOption(name)
         }, 3000);
-        console.log('4');
         expect(validateAddedRecord, 'Record could not be found').to.be.true;
     }
 }

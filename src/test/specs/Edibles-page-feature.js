@@ -1,6 +1,6 @@
-var LoginPage = require("../../pom/webObjects/LoginPage");
-var SideMenu = require("../../pom/webObjects/SideMenu");
-var EdiblesPage = require("../../pom/webObjects/EdiblesPage");
+var loginPage = require("../../pom/webObjects/loginPage");
+var sideMenu = require("../../pom/webObjects/sideMenu");
+var ediblesPage = require("../../pom/webObjects/ediblesPage");
 
 
 before(() => {
@@ -8,18 +8,18 @@ before(() => {
     //  all pages could inherit from and extend their functionality
     browser.url('/login');
     browser.pause(3000);
-    LoginPage.fillLoginForm('mickey@mickey.com', '12345678');
-    SideMenu.confirmGreetings();
+    loginPage.fillLoginForm('mickey@mickey.com', '12345678');
+    sideMenu.confirmGreetings();
 });
 
 describe('Feature: Verify Add/Edit/Delete functionality in Edibles Page', () => {
 
     it('Should verify that user can Add a record', () => {
-        EdiblesPage.clickAddBtn();
-        EdiblesPage.verifyAddNameInput();
-        EdiblesPage.verifyAddCaloriesInput();
-        EdiblesPage.addRecord('Almonds', 200);
-        EdiblesPage.verifyAddedRecord('Almonds');
+        ediblesPage.clickAddBtn();
+        ediblesPage.verifyAddNameInput();
+        ediblesPage.verifyAddCaloriesInput();
+        ediblesPage.addRecord('Almonds', 200);
+        ediblesPage.verifyAddedRecord('Almonds');
     });
 
     //wip
