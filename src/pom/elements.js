@@ -1,10 +1,11 @@
 module.exports = {
 
     launch: {
-        registerBtn: '#root > div > div:nth-child(2) > div > div > div:nth-child(3) > a > button',
-        loginBtn: '#root > div > div:nth-child(2) > div > div > div:nth-child(5) > a > button',
-        buttons: 'div > div > div > a > button',
-        title: 'header > h1 > a',
+        registerBtn: 'div:nth-child(3) > a > button',
+        loginBtn: 'div:nth-child(5) > a > button',
+        buttons: 'button',
+        title: 'h1 > a',
+        subtitle: 'h2',
     },
 
     register: {
@@ -41,7 +42,7 @@ module.exports = {
         saveBtn: '[data-ui="save-btn"]',
         addNameInput: '[name="name"]',
         addCaloriesInput: '[name="calories"]',
-        namesList: '#root > div > div:nth-child(2) > section > div > table > tbody > tr > td:nth-child(1)',
+        namesList: 'div:nth-child(2) td:nth-child(1)',
     },
 
 
