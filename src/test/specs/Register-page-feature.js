@@ -3,8 +3,8 @@ var SideMenu = require("../../pom/webObjects/SideMenu");
 
 
 beforeEach(() => {
-    var title =  '#root > div > div:nth-child(2) > div > div > h2';
-    var registerBtn = '#root > div > div:nth-child(2) > div > div > div:nth-child(3) > a > button';
+    var title =  'div:nth-child(2)  h2';
+    var registerBtn = 'div:nth-child(3) button';
 
     browser.url('/');
     browser.waitForExist(title, 4000, false);
