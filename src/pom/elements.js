@@ -1,8 +1,8 @@
 module.exports = {
 
     launch: {
-        registerBtn: 'div:nth-child(3) > a > button',
-        loginBtn: 'div:nth-child(5) > a > button',
+        registerBtn: 'div:nth-child(3) button',
+        loginBtn: 'div:nth-child(5) button',
         buttons: 'button',
         title: 'h1 > a',
         subtitle: 'h2',
