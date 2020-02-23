@@ -45,7 +45,5 @@ module.exports = {
         namesList: 'div:nth-child(2) td:nth-child(1)',
     },
 
-
-
 };
 

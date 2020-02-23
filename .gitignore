@@ -1,0 +1,5 @@
+.idea/
+errorShots/
+node_modules/
+package-lock.json
+src/test/specs/my-sample-test.js
